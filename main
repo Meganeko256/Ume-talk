@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>うめトーク</title>
+  <link rel="stylesheet" href="main.css">
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <div class="chat-container">
+    <div class="chat-box">
+      <div class="message ai-message">
+        <p class="message-text">こんにちは！私はUmeAIです。何か質問がありますか？</p>
+      </div>
+      <div class="user-message">
+        <p class="message-text"></p>
+      </div>
+    </div>
+
+    <div class="input-area">
+      <textarea class="input-field" placeholder="メッセージを入力"></textarea>
+      <img src="スクリーンショット 2024-11-26 163536.png" class="send-btn" alt="送信ボタン">
+    </div>
+
+    
+    <div id="game-container" style="display:none;">
+      <div id="user-cards"></div>
+      <div id="ai-cards"></div>
+      <div id="user-score"></div>
+      <div id="ai-score"></div>
+
+      <button id="hit-btn" onclick="hit()">カードを引く</button>
+      <button id="stand-btn" onclick="stand()">スタンド</button>
+      <button id="new-game-btn" onclick="startGame()" style="display:none;">《次へ》</button>
+      <button id="exit-game-btn" onclick="exitGame()">ゲーム終了</button> 
+    </div>
+  </div>
+</body>
+</html>
